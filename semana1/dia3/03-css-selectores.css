@@ -1,0 +1,68 @@
+/*
+    h2 selecciona a todos los h2 de la página
+*/
+
+h2{
+    color:crimson;
+
+}
+
+/*p,h1=> todos los párrafos y la etiqueta h1 */
+
+p,h1{
+    color:#555;
+}
+
+
+.sombra{
+    box-shadow: 0px 2px 8px #888;
+}
+
+.text-danger{
+    color: crimson;
+}
+
+.text-sucess{
+    color: green;
+}
+
+
+/*
+section p=> todos los párrafos que sean descendientes de un section
+pueder ser hijos, nietos, etc etc.
+
+*/
+
+section p{
+    font-size: 14px;
+}
+
+/* todas las etiquetas que tengan la clase "badge-black" que sean descendiente de un párrafo */
+
+p .badge-black{
+    background-color:#222;
+    color:#eee;
+}
+
+/*
+Todos los li que sean hijos en primer nivel de un "ul" 
+*/
+
+/* otro comentario */
+
+ul>li{
+    font-style: italic;
+}
+
+ol>li{
+    font-style: normal;
+}
+
+
+/*
+elemenot: hover =>
+*/
+
+ul>li:hover{
+    background-color: #eee;
+}
