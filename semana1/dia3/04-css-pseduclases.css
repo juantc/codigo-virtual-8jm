@@ -19,3 +19,41 @@ tbody tr:nth-child(odd){
 tr:nth-child(even){
     background-color:#aaa;
 }
+
+
+/*cómo quitar el margen entre celdas a una tabla */
+
+table{
+    border-collapse: collapse;
+}
+
+thead tr:first-child{
+    background-color: coral;
+}
+
+thead tr:first-child th:first-child{
+    border-top-left-radius: 10px;
+}
+
+
+thead tr:first-child th:last-child{
+    -moz-berder-radius-topright: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+nav li{
+    display:inline-block;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-right: 10px;
+    color: #444;
+}
+
+.nav-link.active{
+    font-style: italic;
+    
+}
