@@ -1,0 +1,61 @@
+
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+@font-face {
+    font-family: 'miPrimeraFuente' ;
+    src: url('../dia5/fuentesGlobales/Montserrat-Regular.ttf');
+}
+
+
+h1, h2{
+    font-family: "miPrimeraFuente";
+    color:rgb(13, 33, 148)
+}
+
+.descripcion{
+  font-family: "miPrimeraFuente";  
+  font-size:12px;
+  width:200px;
+  overflow:scroll;
+}
+
+.fuente__link{
+    font-family: 'Courgette', cursive;
+}
+
+a{
+    background-color:#c00;
+    color:#fff;
+text-decoration: none;
+padding:8px;
+border-radius:6px;
+font-family: "miPrimeraFuente";
+}
+
+a:hover{
+    background-color:#fff;
+    color:#000;
+    border: 1px solid #c00;
+
+}
+
+
+.portada__codigo{
+    background-image: url('../');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+
+.btn_iniciar_session{
+    margin-top: 30px;
+    font-family: "Teko";
+    background: linear-gradient();
+    border:none;
+    color:#fff;
+    
+}
