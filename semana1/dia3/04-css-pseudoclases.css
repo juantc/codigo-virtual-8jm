@@ -28,7 +28,8 @@ tbody tr:nth-child(even) {
 
 /*la tercera columna de los grupos de "td" y "th"*/
 
-td:nth-child(3), th:nth-child(3) {
+td:nth-child(3),
+th:nth-child(3) {
   background-color: pink;
 }
 
@@ -62,13 +63,24 @@ thead tr:first-child th:last-child {
 
 nav li {
   display: inline-block;
+  background-color: #c00;
+  border-radius: 10%;
+}
+
+nav li:hover {
+  background-color: rgb(10, 133, 30);
 }
 
 .nav-link {
   text-decoration: none;
-  font-family: sans-serif;
+  height: 500px;
+  font-family: 'Roboto', sans-serif;
   margin-right: 10px;
-  color: #444;
+  color: rgb(255, 255, 255);
+  /*color: #444;*/
+  padding: 10px;
+  border-radius: 6px;
+  font-family: "miPrimeraFuente";
 }
 
 /*Todos los elementos que tengan la clase "nav-link" pero que además
@@ -80,13 +92,13 @@ tengan la clase "active"*/
 
 /*Todos los elementos "p" que sean hermanos de un "h2"*/
 
-h2~p {
+h2 ~ p {
   color: orange;
 }
 
 /*El primer hermano "p" de un "h3"*/
 
-h3+p {
+h3 + p {
   color: aquamarine;
 }
 
@@ -94,10 +106,15 @@ h3+p {
 Todos los elementos "article" excepto aquellos
 que tengan la clase "agotado"
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 article:not(.agotado) {
   width: 300px;
   box-shadow: 0px 0px 8px #888;
+  font-family: ''Roboto', sans-serif';
+
+background: linear-gradient(#e1f091, #09b7ec);
+
 }
 
 /*
@@ -106,4 +123,24 @@ Todos los hijos de "article" excepto los "h4"
 
 article :not(h4) {
   font-style: italic;
+}
+
+.nav {
+  background-color: #c00;
+}
+
+.btn_iniciar_session {
+  margin-top: 30px;
+  font-family: "Teko";
+  background: linear-gradient();
+  border: none;
+  color: #fff;
+}
+.quinta_imagen{
+  filter: invert(1)
+}
+
+
+.septima_imagen{
+  filter: hue-rotate(270deg)
 }

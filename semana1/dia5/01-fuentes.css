@@ -59,3 +59,12 @@ a:hover{
     color:#fff;
     
 }
+
+.quinta_imagen{
+    filter: invert(1)
+}
+
+
+.septima_imagen{
+    filter: hue-rotate(270deg)
+}
