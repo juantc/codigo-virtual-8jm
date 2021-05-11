@@ -1,0 +1,14 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+header{
+    height:60px;
+    box-shadow: 0px 0px 8px #bbb;
+}
+
+.navegacion{
+    opacity: 0;
+}
