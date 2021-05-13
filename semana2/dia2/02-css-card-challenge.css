@@ -38,7 +38,8 @@ card .card__info {
   position: absolute;
   top: 0px;
   left: 100px;
-
+  transition: all 0.3s ease;
+ 
 }
 
 .parrafo{
@@ -47,7 +48,7 @@ card .card__info {
   padding-right: 30px;
 }
 .card__date {
-  
+
   text-align: center;
   vertical-align: middle;
   background-color: rgb(228, 17, 17);
@@ -95,4 +96,33 @@ ul li{
   color: red;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.card__info .card__description{
+  display: none;
+  color: #666;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.card:hover .card__img{
+  height: 200px;
+ 
+}
+
+.card:hover .card__img img{
+  filter: brightness(0.5);
+}
+
+.card:hover .card_info{
+  height: 350px;
+  
+}
+
+.card_description{
+  display: block;
+}
+
+.card:hover .card__slogan{
+  margin-block: 1rem;
 }
