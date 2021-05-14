@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ddd;
+}
+
+.card{
+  height:500px;
+  width: 400px;
+  /*display: block;*/
+  background-color:yellow;
+}
+.superior{
+  height:250px;
+  width: 400px;
+  background-color: red;
+  /*display: block;*/
+}
