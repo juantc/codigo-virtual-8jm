@@ -1,0 +1,33 @@
+//RESET CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+//RESET CSS
+
+.header{
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__navigation{
+        .header__links{
+            display: flex;
+            gap: 1rem;
+            
+        }
+    }
+}

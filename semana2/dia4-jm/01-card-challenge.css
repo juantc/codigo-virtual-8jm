@@ -1,0 +1,27 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+
+.card__service:Last-child{
+    border-right: none;
+}
+
+/*end services*/
+
+
+
+/*description*/
+.card__description{
+    padding: 0.8rem 0.5rem;
+}
+
+.card__title{
+    color: #434A54;
+    text-transform: uppercase;
+}
+
+/*END DESCRIPTION*/
+
