@@ -8,6 +8,7 @@ let inputNombre=document.getElementById("inputNombre");
 let inputMensaje=document.getElementById("inputMensaje");
 let letras=document.getElementById("letras");
 
+let formulario=document.getElementById("formulario");
 
 linkGoogle.onclick = (e) => {
   e.preventDefault();
@@ -40,6 +41,13 @@ let departamentos = [
   { id: 28, nombre: "Cordova", idPais: 19, stock: false },
   { id: 29, nombre: "Tulum", idPais: 12, stock: true },
 ];
+
+
+let datos = {
+  nombre: "",
+  mensaje: "",
+};
+
 
 const llenarPaises = () => {};
 llenarPaises();
@@ -111,3 +119,35 @@ if(caracteres>50){
 // 	if (n === imagenes.length - 1) {
 // 		btnSiguiente.setAttribute('disabled', true);
 // 	}
+const setData=(e)=>{
+  datos[e.target.name]=e.target.value;
+}
+
+inputNombre.onkeyup=(e)=>{
+  setData(e);
+  console.log("nombre",e.target.name);
+  console.log(inputNombre.value)
+}
+inputMensaje.onkeyup=(e)=>{
+  setData(e);
+  console.log("Mensaje",e.target.name);
+  console.log(inputMensaje.value)
+}
+
+formulario.onsubmit=(e)=>{
+  e.preventDefault();
+  console.log("Mi submit funciona")
+  console.log(datos);
+
+  const regexLetras=new RegExp("^[a-zA-Zñ]");
+
+  console.log(datos.nombre);
+  if(regexLetras.test(datos.nombre)){
+    if(regexLetras.test(datos.mensaje)){
+      console.log("Todo OK");
+    }
+  }else{
+    console.error("Todo mal");
+  }
+}
+
