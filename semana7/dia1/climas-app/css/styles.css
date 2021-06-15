@@ -1,0 +1,14 @@
+.input-busqueda{
+    min-height: 60px;
+    border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    -ms-border-radius:30px;
+    -o-border-radius:30px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 2rem;
+
+    background-image: url('./../assets/search.svg')
+}
+
