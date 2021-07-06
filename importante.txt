@@ -1,0 +1,18 @@
+Windows (PowerShell) version of Benny's answer
+Machine A:
+
+In the Visual Studio Code PowerShell terminal:
+
+code --list-extensions > extensions.list
+
+Machine B:
+
+Copy extension.list to the machine B
+
+In the Visual Studio Code PowerShell terminal:
+
+ cat extensions.list |% { code --install-extension $_}
+
+
+
+https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-listvnode
